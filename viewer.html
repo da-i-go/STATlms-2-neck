@@ -58,7 +58,7 @@
     function getImageFilename(n, set = currentSet) {
       const padding = imageSets[set].padding || 0;
       const padded = String(n).padStart(padding, '0');
-      return `${set}/${set}-${padded}.jpg`;
+      return `${set}/${set}-${padded}.jpeg`;
     }
 
     function preloadImages(set, callback) {
