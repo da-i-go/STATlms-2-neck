@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta content="noindex, nofollow" name="robots"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>患者情報</title>
+<link href="css/patient.css" rel="stylesheet"/>
+</meta>
+<script>
+  if (sessionStorage.getItem("authenticated") !== "true") {
+    location.replace("index.html");
+  }
+</script>
+</head>
+<body>
+<h1>患者情報</h1>
+<div class="patient-card">
+<div class="row">
+<span class="label">患者</span>
+<span class="value">70代、女性</span>
+</div>
+<div class="row">
+<span class="label">主訴</span>
+<span class="value">頸部〜背部痛</span>
+</div>
+<div class="row">
+<span class="label">現病歴</span>
+<span class="value">
+        着替え中に、頸の付け根から背中まで痛みが出現<br/>
+        冷や汗が出るほど痛むため救急要請
+</span>
+</div>
+<div class="row">
+<span class="label">検査内容</span>
+<span class="value">
+        頭部CT・MRIで原因となる異常なし。<br/>
+        その後頸〜胸部CT
+</span>
+</div>
+</div>
+<div class="next-button">
+<a href="viewer.html">▶ 検査画像へ</a>
+</div>
+</body>
+</html>
